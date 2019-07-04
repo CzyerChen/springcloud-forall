@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-for-feign-hystrix/cloud-for-feign-hystrix.iml" filepath="$PROJECT_DIR$/cloud-for-feign-hystrix/cloud-for-feign-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-forall.iml" filepath="$PROJECT_DIR$/springcloud-forall.iml" />
+    </modules>
+  </component>
+</project>
