@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-for-feign-hystrix" />
+        <module name="cloud-for-feign-sftp" />
+        <module name="cloud-for-sftp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-for-feign-hystrix" target="1.5" />
+      <module name="cloud-for-feign-sftp" target="1.5" />
+      <module name="cloud-for-sftp" target="1.5" />
       <module name="springcloud-forall" target="1.5" />
     </bytecodeTargetLevel>
   </component>
