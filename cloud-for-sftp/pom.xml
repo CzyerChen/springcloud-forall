@@ -13,7 +13,7 @@
 
     <properties>
         <jsch.version>0.1.54</jsch.version>
-        <sshd.version>0.14.0</sshd.version>
+        <sshd.version>2.7.0</sshd.version>
     </properties>
 
     <dependencies>
