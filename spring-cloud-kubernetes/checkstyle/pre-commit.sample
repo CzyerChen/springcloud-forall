@@ -1,0 +1,60 @@
+#!/bin/sh
+# claire
+
+# From java package
+# checkStyle version: 8.45
+# jdk version: 1.8
+
+function print(){
+echo "checkStyle>> $*"
+}
+
+print "Javacode stylecheck starting, please wait..."
+wd=`pwd`
+print "Workdir: $wd"
+
+check_jar_path="$wd/.git/jars/checkstyle-8.45-all.jar"
+check_xml_path="$wd/.git/files/checkStyle.xml"
+check_result_file="$wd/temp"
+
+# 清空temp文件
+rm -rf $check_result_file
+
+is_err=0
+is_warn=0
+
+path=''
+for file in `git status --porcelain | sed s/^...// | grep '\.java$' | grep -v 'test'`;
+do
+path+="$wd/$file "
+done
+if [ "x${path}" != "x" ];then
+  print "Check file: $path"
+  re=`java -jar $check_jar_path -c $check_xml_path $path -f plain -o $check_result_file`
+  err=`cat temp | grep "ERROR"`
+  err_count=`cat temp | grep "ERROR" | wc -l`
+  warn=`cat temp | grep "WARN"`
+  warn_count=`cat temp | grep "WARN" | wc -l`
+  info=`cat temp`
+  if [[ $err = *"ERROR"* ]];then
+    print "detect error lines count: ${err_count}"
+    print "${err}"
+    is_err=1
+  fi
+  if [[ $warn = *"WARN"* ]];then
+    print "detect warning lines count: ${warn_count}"
+    print "${warn}"
+    is_warn=1
+  fi
+fi
+print "Javacode stylecheck finished. Thank you for your commit!"
+
+rm -rf $check_result_file
+
+if [ $is_err -ne 0 ] || [ $is_warn -ne 0 ]
+then
+print "Please return and fix stylecheck warnings before code commit！"
+exit 1
+fi
+
+exit 0

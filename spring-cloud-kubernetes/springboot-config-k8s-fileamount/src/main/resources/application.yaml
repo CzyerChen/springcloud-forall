@@ -1,0 +1,7 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-k8s-config-fileamount
+dbuser: ${DB_USERNAME:default}
+dbpassword: ${DB_PASSWORD:default}

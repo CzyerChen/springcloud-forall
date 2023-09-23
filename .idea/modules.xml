@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/alibaba-for-all/alibaba-for-all.iml" filepath="$PROJECT_DIR$/alibaba-for-all/alibaba-for-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-for-feign-hystrix/cloud-for-feign-hystrix.iml" filepath="$PROJECT_DIR$/cloud-for-feign-hystrix/cloud-for-feign-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-for-feign-sftp/cloud-for-feign-sftp.iml" filepath="$PROJECT_DIR$/cloud-for-feign-sftp/cloud-for-feign-sftp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-for-register-nacos/cloud-for-register-nacos.iml" filepath="$PROJECT_DIR$/cloud-for-register-nacos/cloud-for-register-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-for-sftp/cloud-for-sftp.iml" filepath="$PROJECT_DIR$/cloud-for-sftp/cloud-for-sftp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-kubernetes/spring-cloud-kubernetes.iml" filepath="$PROJECT_DIR$/spring-cloud-kubernetes/spring-cloud-kubernetes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-k8s-fileamount/springboot-config-k8s-fileamount.iml" filepath="$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-k8s-fileamount/springboot-config-k8s-fileamount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-k8s-valueref/springboot-config-k8s-valueref.iml" filepath="$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-k8s-valueref/springboot-config-k8s-valueref.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-refresh/springboot-config-refresh.iml" filepath="$PROJECT_DIR$/spring-cloud-kubernetes/springboot-config-refresh/springboot-config-refresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-forall.iml" filepath="$PROJECT_DIR$/springcloud-forall.iml" />
     </modules>
   </component>

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-config-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+  endpoint:
+    refresh:
+      enabled: true
+demo:
+  message: files
+  value: files

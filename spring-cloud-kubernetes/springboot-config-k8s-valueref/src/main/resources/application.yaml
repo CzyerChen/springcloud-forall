@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: springboot-cloud-k8s-config-valueref
+greeting:
+  message: ${GREETING_MESSAGE:nice to meet you}
+farewell:
+  message: ${FAREWELL_MESSAGE:see you next time}

@@ -6,15 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="alibaba-for-all" />
+        <module name="springboot-config-refresh" />
+        <module name="springboot-config-k8s-valueref" />
         <module name="cloud-for-feign-hystrix" />
-        <module name="cloud-for-feign-sftp" />
+        <module name="cloud-for-register-nacos" />
+        <module name="springboot-config-k8s-fileamount" />
         <module name="cloud-for-sftp" />
+        <module name="cloud-for-feign-sftp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="alibaba-for-all" target="8" />
       <module name="cloud-for-feign-hystrix" target="1.5" />
       <module name="cloud-for-feign-sftp" target="1.5" />
+      <module name="cloud-for-register-nacos" target="8" />
       <module name="cloud-for-sftp" target="1.5" />
+      <module name="spring-cloud-kubernetes" target="17" />
+      <module name="springboot-config-k8s-fileamount" target="17" />
+      <module name="springboot-config-k8s-valueref" target="17" />
+      <module name="springboot-config-refresh" target="17" />
       <module name="springcloud-forall" target="1.5" />
     </bytecodeTargetLevel>
   </component>

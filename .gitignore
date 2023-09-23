@@ -18,6 +18,9 @@
 /.idea/modules.xml
 /.idea/vcs.xml
 *.iml
+compiler.xml
+modules.xml
+
 
 
 # User-specific stuff:

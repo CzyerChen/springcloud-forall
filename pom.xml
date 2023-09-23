@@ -12,6 +12,9 @@
         <module>cloud-for-feign-hystrix</module>
         <module>cloud-for-feign-sftp</module>
         <module>cloud-for-sftp</module>
+        <module>alibaba-for-all</module>
+        <module>cloud-for-register-nacos</module>
+        <module>spring-cloud-kubernetes</module>
     </modules>
 
 
