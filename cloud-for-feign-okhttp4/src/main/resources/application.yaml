@@ -1,0 +1,12 @@
+server:
+  port: 8089
+spring:
+  cloud:
+    openfeign:
+      okhttp:
+        enabled: true
+      httpclient:
+        enabled: false
+debug: true
+
+

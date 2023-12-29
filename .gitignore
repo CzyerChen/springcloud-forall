@@ -13,11 +13,13 @@
 *.rar
 
 # IntelliJ
-/out/
 .idea
+*.iws
+*.iml
+*.ipr
+/out/
 /.idea/modules.xml
 /.idea/vcs.xml
-*.iml
 compiler.xml
 modules.xml
 
